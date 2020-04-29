@@ -1,0 +1,4 @@
+Name: Paste Numbers
+Description: Paste numbers from your clipboard
+Binding: pasteNumbers
+Interactive: false

@@ -1,0 +1,16 @@
+Package: pasteNumbers
+Title: Paste numbers from your clipboard
+Version: 0.1.0
+Authors@R: person(family="Zettsu", given="Tatsuya", email="zettsu.tatsuya@gmail.com", role=c("aut", "cre"))
+Description: Copies a string as numbers from your clipboard to RStudio excluding non-numeric characters.
+Depends:
+    R (>= 3.0.0)
+Imports:
+    rstudioapi (>= 0.11),
+    clipr (>= 0.7),
+    stringr (>= 1.4)
+License: MIT + file LICENSE
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: 
+    testthat
