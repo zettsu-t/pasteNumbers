@@ -2,7 +2,7 @@
 #'
 #' Call this function as an addin to paste numbers from your clipboard
 #'
-#' @import magrittr
+#' @importFrom magrittr %>%
 #' @export
 pasteNumbers <- function() {
     clipr::read_clip() %>%

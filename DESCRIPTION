@@ -2,7 +2,10 @@ Package: pasteNumbers
 Title: Paste numbers from your clipboard
 Version: 0.1.0
 Authors@R: person(family="Zettsu", given="Tatsuya", email="zettsu.tatsuya@gmail.com", role=c("aut", "cre"))
-Description: Copies a string as numbers from your clipboard to RStudio excluding non-numeric characters.
+Description: Copies a string as numbers from your clipboard to RStudio excluding
+    non-numeric characters. It is burdensome to remove commas and other
+    non-numeric characters in pasting numbers from text editors and spreadsheets
+    to RStudio via clipboard. This addin helps it.
 Depends:
     R (>= 3.0.0)
 Imports:
