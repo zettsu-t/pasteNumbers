@@ -8,6 +8,7 @@ Depends:
 Imports:
     rstudioapi (>= 0.11),
     clipr (>= 0.7),
+    magrittr (>= 1.5),
     stringr (>= 1.4)
 License: MIT + file LICENSE
 LazyData: true
