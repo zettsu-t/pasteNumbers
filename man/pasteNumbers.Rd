@@ -7,5 +7,5 @@
 pasteNumbers()
 }
 \description{
-Call this function as an addin to paste numbers from your clipboard
+Call this function as an addin to paste numbers from your clipboard upto 1024 characters
 }
