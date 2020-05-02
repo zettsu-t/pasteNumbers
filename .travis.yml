@@ -5,8 +5,6 @@ cache: packages
 
 r_github_packages:
     - r-lib/covr
-env:
-    - PKG_TARBALL=pasteNumbers_0.0.1.tar.gz
+
 after_success:
-    - tar -C .. -xf $PKG_TARBALL
-    - xvfb-run Rscript -e 'covr::codecov(type=c("tests"))'
+    - Rscript -e 'covr::codecov()'
