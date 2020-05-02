@@ -12,4 +12,4 @@ Make sure the devtools package is installed.
 devtools::install_github("zettsu-t/pasteNumbers")
 ```
 
-After installing this package, assign a Keyboard shortcut for this package on RStudio. See more details at [RStudio Addins website](http://rstudio.github.io/rstudioaddins/).
+After installing this package, assign a keyboard shortcut for this package on RStudio. See more details at [RStudio Addins website](http://rstudio.github.io/rstudioaddins/).

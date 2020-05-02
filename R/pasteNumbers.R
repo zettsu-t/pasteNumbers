@@ -4,9 +4,10 @@
 #' @importFrom magrittr %>%
 #' @export
 pasteNumbers <- function() {
-    clipr::read_clip() %>%
-        splitIntoNumbers(end_pos=1024) %>%
-        rstudioapi::insertText()
+    x <- clipr::read_clip() %>%
+        splitIntoNumbers(end_pos=1024)
+    rstudioapi::insertText(x)
+    x
 }
 
 #' Extract number strings from a character vector excluding commas

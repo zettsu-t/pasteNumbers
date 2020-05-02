@@ -98,3 +98,23 @@ test_that("long strings", {
     expect_equal(object=pasteNumbers::splitIntoNumbers(x=input, end_pos=expected_len),
                  expected=expected)
 })
+
+test_that("real clipboard short", {
+    skip_if_not(interactive())
+    clipr::write_clip("*4,321 1.5*")
+    expect_equal(object=pasteNumbers::pasteNumbers(), expected="4321 1.5")
+})
+
+test_that("real clipboard long", {
+    skip_if_not(interactive())
+
+    pattern <- "123"
+    seperator <- " "
+    unit_length <- stringr::str_length(stringr::str_c(c(pattern, seperator), collapse=""))
+    n_unit <- 1024 * 8
+    clipr::write_clip(stringr::str_c(rep(pattern, n_unit), collapse=seperator))
+
+    n_unit <- 1024 %/% unit_length
+    expected <- stringr::str_c(rep(pattern, n_unit), collapse=seperator)
+    expect_equal(object=pasteNumbers::pasteNumbers(), expected=expected)
+})
