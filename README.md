@@ -1,4 +1,4 @@
-R pasteNumbers Addin
+R pasteNumbers Addin [![Build Status](https://travis-ci.org/zettsu-t/pasteNumbers.svg?branch=master)](https://travis-ci.org/zettsu-t/pasteNumbers)
 ==============
 
 This addin copies a string as numbers from your clipboard to RStudio excluding non-numeric characters.
