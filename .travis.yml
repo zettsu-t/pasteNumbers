@@ -3,5 +3,10 @@
 language: R
 cache: packages
 
+r_github_packages:
+    - r-lib/covr
+env:
+    - PKG_TARBALL=pasteNumbers_0.0.1.tar.gz
 after_success:
-  - Rscript -e 'covr::codecov()'
+    - tar -C .. -xf $PKG_TARBALL
+    - xvfb-run Rscript -e 'covr::codecov(type=c("tests"))'
